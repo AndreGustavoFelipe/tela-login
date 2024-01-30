@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300;1,400&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+body, html{
+
+    height: 100vh;
+
+}
+
+body{
+    
+
+    background-image: url(./imgs/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+
+
+
+
+
+}
+
+.div-form{
+
+    
+    backdrop-filter: blur(10px);
+
+    width: 30vw;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 20vh;
+
+    border-radius: 40px;
+
+    border: 0.5px solid gray;
+
+}
+
+.form-login{
+
+    width: 90%;
+    height: 90%;
+
+    color: white;
+
+
+}
+
+
+.form-top{
+
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 4vh;
+
+
+
+}
+
+.form-body{
+
+    height: 20vh;
+
+    margin-bottom: 2.5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-body-usuario{
+
+    margin-bottom: 4vh;
+
+    width: 100%;
+    height: 7vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.form-body-senha{
+
+    height: 6vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.form-bottom{
+
+    height: 9vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+    
+
+}
+
+.div-bottom{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.div-checkbox{
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.btn{
+
+    width: 100%;
+    height: 3.7vh;
+
+    margin-top: 2vh;
+
+    border: 1px solid white;
+
+    background-color: transparent;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+.btn:hover{
+
+    background-color: white;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: 300ms;
+
+}
+
+.input{
+
+    margin-top: 0.5vh;
+
+    width: 100%;
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    color: white;
+
+    padding: 2px;
+
+    margin-top: 1.3vh;
+
+    background-color: transparent;
+
+    font-size: 1.5vh
+
+}
+
+
+.input:hover{
+
+    border-bottom: 1px solid white;
+
+    transition: 300ms;
+
+}
+
+
+.input:focus{
+    
+    border-bottom: 1px solid white;
+    
+    transition: 300ms;
+
+}
+
+label{
+
+    font-size: 1.8vh;
+
+}
+
+
+
+.div-input{
+
+    width: 100%;
+
+}
+
+i{
+
+    position: absolute;
+    right: 2vw;
+    
+
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 450px){
+
+    .div-form{
+
+        width: 80vw;
+
+    }
+
+    .form-login{
+
+        width: 90%;
+
+    }
+
+    i{
+
+        right: 6vw;
+
+    }
+
+    .form-bottom{
+
+        font-size: 1.3vh;
+
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 750px){
+
+    .div-form{
+
+        width: 80vw;
+
+    }
+
+    .form-login{
+
+        width: 90%;
+
+    }
+
+    i{
+
+        right: 6vw;
+
+    }
+
+    .form-bottom{
+
+        font-size: 1.5vh;
+
+    }
+}
+
+@media (min-width: 751px) and (max-width: 1250px){
+
+    .div-form{
+
+        width: 60vw;
+
+    }
+
+    .form-login{
+
+        width: 90%;
+
+    }
+
+    i{
+
+        right: 6vw;
+
+    }
+
+    .form-bottom{
+
+        font-size: 1.8vh;
+
+    }
+}
+
